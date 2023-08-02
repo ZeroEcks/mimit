@@ -18,22 +18,30 @@ console.log(props.data)
                 <div>
                     <div>4x:
                         <span v-for="weakness in Object.keys(props.data?.weaknesses)">
-                            <span v-if="props.data?.weaknesses[weakness] === 4"> {{ weakness }} &nbsp; </span>
+                            <span v-if="props.data?.weaknesses[weakness] === 4">
+                                <img class="type-icon" v-bind:src="'https://temtem-api.mael.tech/images/icons/types/' + weakness + '.png'"/>
+                                {{ weakness }} &nbsp; </span>
                         </span>
                     </div>
                     <div>2x:
                         <span v-for="weakness in Object.keys(props.data?.weaknesses)">
-                            <span v-if="props.data?.weaknesses[weakness] === 2">{{ weakness }} &nbsp;</span>
+                            <span v-if="props.data?.weaknesses[weakness] === 2">
+                                <img class="type-icon" v-bind:src="'https://temtem-api.mael.tech/images/icons/types/' + weakness + '.png'"/>
+                                {{ weakness }} &nbsp;</span>
                         </span>
                     </div>
                     <div>0.5x:
                         <span v-for="weakness in Object.keys(props.data?.weaknesses)">
-                            <span v-if="props.data?.weaknesses[weakness] === 0.5">{{ weakness }} &nbsp;</span>
+                            <span v-if="props.data?.weaknesses[weakness] === 0.5">
+                                <img class="type-icon" v-bind:src="'https://temtem-api.mael.tech/images/icons/types/' + weakness + '.png'"/>
+                                {{ weakness }} &nbsp;</span>
                         </span>
                     </div>
                     <div>0.25x:
                         <span v-for="weakness in Object.keys(props.data?.weaknesses)">
-                            <span v-if="props.data?.weaknesses[weakness] === 0.25">{{ weakness }} &nbsp;</span>
+                            <span v-if="props.data?.weaknesses[weakness] === 0.25">
+                                <img class="type-icon" v-bind:src="'https://temtem-api.mael.tech/images/icons/types/' + weakness + '.png'"/>
+                                {{ weakness }} &nbsp;</span>
                         </span>
                     </div>
                 </div>
