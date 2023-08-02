@@ -1,0 +1,12 @@
+@import './base.css';
+@import '../../node_modules/picnic/src/picnic.scss';
+
+nav {
+  position: absolute;
+}
+
+.content {
+  padding-top: 80px;
+  max-width: 80%;
+  margin: 0 auto;
+}
